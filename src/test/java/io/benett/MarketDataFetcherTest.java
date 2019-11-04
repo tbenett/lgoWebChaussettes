@@ -47,7 +47,7 @@ class MarketDataFetcherTest {
 
   @Test
   void can_sign_a_string_using_SH256withRSA() throws Exception {
-    final String signedToto = new MarketDataFetcher().signString("toto");
+    final String signedToto = new MarketDataFetcher().sign("toto");
 
     System.out.println(signedToto);
   }
